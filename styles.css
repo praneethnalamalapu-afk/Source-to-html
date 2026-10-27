@@ -1,0 +1,48 @@
+/* Theme for generated source pages */
+:root {
+    color-scheme: light dark;
+    --page: #101827;
+    --panel: #172235;
+    --text: #e5edf7;
+    --muted: #9fb0c7;
+    --keyword: #c792ea;
+    --identifier: #e5edf7;
+    --number: #f78c6c;
+    --string: #c3e88d;
+    --comment: #7f9f89;
+    --preprocessor: #89ddff;
+    --operator: #89ddff;
+    --special: #f07178;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+header, main, footer { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+header { padding: 26px 0 14px; }
+h1 { margin: 0; font-size: clamp(1.5rem, 4vw, 2.2rem); }
+header p, footer { color: var(--muted); }
+.source {
+    margin: 0;
+    padding: 22px;
+    overflow-x: auto;
+    border: 1px solid #2b3a50;
+    border-radius: 12px;
+    background: var(--panel);
+    tab-size: 4;
+    white-space: pre;
+    font: 14px/1.7 ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+.keyword { color: var(--keyword); font-weight: 600; }
+.identifier { color: var(--identifier); }
+.number { color: var(--number); }
+.string, .character { color: var(--string); }
+.comment { color: var(--comment); font-style: italic; }
+.preprocessor { color: var(--preprocessor); }
+.operator { color: var(--operator); }
+.special { color: var(--special); }
+footer { padding: 18px 0 32px; font-size: .9rem; }
+@media (max-width: 600px) { .source { padding: 14px; font-size: 12px; } }

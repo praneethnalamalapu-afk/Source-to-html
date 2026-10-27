@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sample.c — Source to HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Source to HTML</h1><p>Syntax-highlighted C source</p></header>
+  <main><pre class="source"><code>
+<span class="preprocessor">#include &lt;stdio.h&gt;</span>
+
+<span class="comment">/* Demo source: HTML special characters should be escaped safely. */</span>
+<span class="keyword">int</span> <span class="identifier">main</span><span class="special">(</span><span class="keyword">void</span><span class="special">)</span>
+<span class="special">{</span>
+    <span class="identifier">printf</span><span class="special">(</span><span class="string">&quot;Hello, world!\n&quot;</span><span class="special">)</span><span class="special">;</span>
+    <span class="identifier">printf</span><span class="special">(</span><span class="string">&quot;This is a demo of HTML special characters: &lt;, &gt;, &amp;, \&quot;, '\n&quot;</span><span class="special">)</span><span class="special">;</span>
+    <span class="keyword">return</span> <span class="number">0</span><span class="special">;</span>
+<span class="special">}</span>
+
+<span class="comment">// output:</span>
+<span class="comment">// Hello, world!</span>
+<span class="comment">// This is a demo of HTML special characters: &lt;, &gt;, &amp;, &quot;, '</span>
+</code></pre></main>
+<footer>the project source to html</footer>
+</body>
+</html>
